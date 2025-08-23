@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+state="$(cat /sys/bus/pci/devices/0000:01:00.0/power/runtime_status)"
+echo "GPU state: $state"
+cat /proc/driver/nvidia/gpus/*/power
